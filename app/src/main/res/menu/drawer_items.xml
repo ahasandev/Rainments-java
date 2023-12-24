@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+
+        <item
+            android:id="@+id/profile"
+            android:title="profile"
+            android:icon="@drawable/baseline_person"
+            android:checkable="true"
+            />
+        <item
+            android:id="@+id/favorite"
+            android:title="Favorite"
+            android:icon="@drawable/baseline_favorite"
+            android:checkable="true"
+            />
+        <item
+            android:id="@+id/mycard"
+            android:title="My cart"
+            android:icon="@drawable/shopping_cart"
+            android:checkable="true"
+            />
+        <item
+            android:id="@+id/cardhistory"
+            android:title="History"
+            android:icon="@drawable/shopping_cart"
+            android:checkable="true"
+            />
+    </group>
+    <group>
+        <item
+            android:id="@+id/email"
+            android:title="Email"
+            android:checkable="true"
+            android:icon="@drawable/baseline_email"
+            />
+        <item
+            android:id="@+id/call"
+            android:title="Contact"
+            android:checkable="true"
+            android:icon="@drawable/baseline_call_24"
+            />
+    </group>
+    <group>
+        <item
+            android:id="@+id/rateapp"
+            android:title="Rate App"
+            android:checkable="true"
+            android:icon="@drawable/baseline_star_rate"
+            />
+        <item
+            android:id="@+id/appinfo"
+            android:title="App Info"
+            android:checkable="true"
+            android:icon="@drawable/baseline_info"
+            />
+        <item
+            android:id="@+id/setting"
+            android:title="Setting"
+            android:checkable="true"
+            android:icon="@drawable/baseline_share"
+            />
+    </group>
+</menu>

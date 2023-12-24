@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitis.ProductDetails">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/pdheader"
+                android:layout_width="match_parent"
+                android:layout_height="520dp"
+                >
+                <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+                    android:id="@+id/carousel2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    app:imageScaleType="centerCrop"
+                    app:showTopShadow="false"
+                    app:showBottomShadow="false"
+                    app:showIndicator="true"
+                    app:carouselPaddingBottom="10dp"
+                    app:showNavigationButtons="true"
+                    app:autoPlay="false"
+                    />
+                <TextView
+                    android:id="@+id/pdprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="60dp"
+                    android:paddingTop="2sp"
+                    android:background="@drawable/shape"
+                    android:gravity="start"
+                    android:text="Price"
+                    android:textColor="#1B9505"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/favorited"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:clickable="true"
+                    android:contentDescription="Wishlist"
+                    android:src="@drawable/favorite_border" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/pdrating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pdheader"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="8dp"
+                >
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:scaleX=".9"
+                    android:rating="4.5"
+                    android:scaleY=".8"
+                    android:transformPivotX="0dp"
+                    android:transformPivotY="0dp"
+                    android:max="5"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/footer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pdrating"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                >
+                <TextView
+                    android:id="@+id/colors"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Color"
+                    android:textColor="@color/black"
+                    android:paddingLeft="5sp"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/colors"
+                    >
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton
+                        android:id="@+id/radiseoButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blue"
+                        android:textStyle="bold"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radsioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Black"
+                        android:textStyle="bold"
+                        />
+                </RadioGroup>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/drsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Size"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/drsize"
+                    android:layout_marginRight="20dp"
+                    >
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:id="@+id/radsfsdioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Medium"
+                            android:textStyle="bold"
+                            />
+                        <RadioButton
+                            android:id="@+id/radfdsfsdfsdsioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Large"
+                            android:textStyle="bold"/>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/pdtdis"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/footer"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:padding="5dp"
+                android:text="Online shopping gave birth to a new era, to a new type of commerce and communication. But because everything takes place through a screen, our products need to be presented in the most professional way possible with its related information that can be showcased with this eCommerce mobile app"
+                android:textSize="17sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:weightSum="5"
+        >
+
+        <Button
+            android:id="@+id/buybtn"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_shape"
+            android:layout_weight="3"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="Buy now "
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/addtocart"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape"
+            android:layout_weight="2"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Add To Cart"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:foreground="?attr/selectableItemBackground"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

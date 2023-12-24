@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:background="@drawable/drawer_header_bg"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/rainment"
+        android:layout_gravity="start|left"
+        app:civ_border_width="3dp"
+        app:civ_border_color="#22000000"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/maisha_s_raiment"
+        android:fontFamily="@font/poison_apple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#0088FF"
+        android:layout_gravity="start|left"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingStart="5dp"
+
+        tools:ignore="HardcodedText,RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lead your fashion"
+        android:textSize="17sp"
+        android:textColor="#FFB300"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="5dp"
+
+
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:src="@drawable/rainment"
+            app:civ_circle_background_color="#FFFFFF"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFFFF"/>
+        <TextView
+            android:id="@+id/cattilte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ahasan"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:maxLines="2"
+            />
+
+
+
+
+</LinearLayout>

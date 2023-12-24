@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Rainment</string>
+    <string name="close_drawer">Drawer Close</string>
+    <string name="open_drawer">Drawe Open</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="maisha_s_raiment">Maisha\'s-Raiment</string>
+</resources>

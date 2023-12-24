@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Rainment" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@android:color/holo_orange_light</item>
+        <item name="colorPrimaryVariant">@android:color/holo_orange_light</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+
+        <item name="colorSecondary">@android:color/holo_orange_light</item>
+        <item name="colorSecondaryVariant">@color/design_default_color_secondary_variant</item>
+        <item name="colorOnSecondary">?android:attr/colorActivatedHighlight</item>
+
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Rainment" parent="Base.Theme.Rainment" />
+
+    <style name="Base.Theme.actionbar" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="TIRAMISU" >false</item>
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@android:color/holo_orange_light</item>
+        <item name="colorPrimaryDark">@android:color/holo_orange_light</item>
+
+<!--        <item name="colorPrimaryVariant">@android:color/holo_orange_light</item>-->
+        <item name="colorOnPrimary">@color/white</item>
+
+
+        <item name="colorSecondary">@android:color/holo_orange_light</item>
+        <item name="colorSecondaryVariant">@android:color/holo_orange_light</item>
+        <item name="colorOnSecondary">?attr/colorAccent</item>
+
+
+
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+</resources>
